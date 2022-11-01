@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>systemset</class>
+ <widget class="QDialog" name="systemset">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>557</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>系统设置</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>本地设置</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_LocalPort">
+        <property name="text">
+         <string>本地端口：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="LoadPort"/>
+      </item>
+      <item row="1" column="1">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_ACUIP">
+        <property name="text">
+         <string>伺服IP：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLineEdit" name="ACUIp"/>
+      </item>
+      <item row="9" column="1">
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="label_ACUPort">
+        <property name="text">
+         <string>伺服端口：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QLineEdit" name="ACUPort"/>
+      </item>
+      <item row="14" column="0">
+       <widget class="QLabel" name="label_RemoteConIP">
+        <property name="text">
+         <string>远控组播IP：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="1">
+       <widget class="QLineEdit" name="RemoteConIP"/>
+      </item>
+      <item row="15" column="1">
+       <spacer name="verticalSpacer_11">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="17" column="0">
+       <widget class="QLabel" name="label_RemoteConPort">
+        <property name="text">
+         <string>远控组播端口：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="1">
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="19" column="0">
+       <widget class="QLabel" name="label_CalIp">
+        <property name="text">
+         <string>标效IP：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="1">
+       <widget class="QLineEdit" name="CalIp"/>
+      </item>
+      <item row="20" column="1">
+       <spacer name="verticalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="21" column="0">
+       <widget class="QLabel" name="label_CalPort">
+        <property name="text">
+         <string>标效端口：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="21" column="1">
+       <widget class="QLineEdit" name="CalPort"/>
+      </item>
+      <item row="17" column="1">
+       <widget class="QLineEdit" name="RemoteConPort"/>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="LocalConPort"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_LocalConPort">
+        <property name="text">
+         <string>本控组播端口：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <spacer name="verticalSpacer_12">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="13" column="1">
+       <spacer name="verticalSpacer_13">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="LocalConIp"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_localConIP">
+        <property name="text">
+         <string>本地组播IP：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <spacer name="verticalSpacer_10">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>FTP设置</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_FtpIp">
+        <property name="text">
+         <string>FTP IP：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="FtpIp"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_FtpPort">
+        <property name="text">
+         <string>FTP端口：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="FtpPort"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_User">
+        <property name="text">
+         <string>用户名：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="UserName"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_Password">
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="text">
+         <string>密码：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="Password">
+        <property name="cursor">
+         <cursorShape>IBeamCursor</cursorShape>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_FtpPath">
+        <property name="text">
+         <string>FTP路径：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLineEdit" name="FTPPath"/>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="label_LocalPath">
+        <property name="text">
+         <string>本地路径：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QLineEdit" name="LocadPath"/>
+      </item>
+      <item row="1" column="1">
+       <spacer name="verticalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="1">
+       <spacer name="verticalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="5" column="1">
+       <spacer name="verticalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="7" column="1">
+       <spacer name="verticalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="9" column="1">
+       <spacer name="verticalSpacer_9">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout_31">
+     <item>
+      <spacer name="horizontalSpacer_24">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>158</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ButtonSave">
+       <property name="minimumSize">
+        <size>
+         <width>65</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{         
+color: rgb(255, 255, 255);             
+	background-color: rgb(54, 96, 232);
+	border: 1px solid rgb(247,247,247);
+	border-radius:3px
+}
+QPushButton:pressed{              
+	background-color: rgb(96, 128, 232);
+	border: 1px solid rgb(247,247,247);
+	border-radius:3px
+}
+QPushButton:disabled{
+	background-color: rgb(189, 189, 189);
+}</string>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_29">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>88</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_35">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>168</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ButtonCancel">
+       <property name="minimumSize">
+        <size>
+         <width>65</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{         
+color: rgb(255, 255, 255);             
+	background-color: rgb(54, 96, 232);
+	border: 1px solid rgb(247,247,247);
+	border-radius:3px
+}
+QPushButton:pressed{              
+	background-color: rgb(96, 128, 232);
+	border: 1px solid rgb(247,247,247);
+	border-radius:3px
+}
+QPushButton:disabled{
+	background-color: rgb(189, 189, 189);
+}</string>
+       </property>
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_33">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>168</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
